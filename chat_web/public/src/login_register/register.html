@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="/Style_css/register.css">
+    <title>Form Login</title>
+    
+</head>
+<body>
+    <div id="header">
+        <div class="menu">
+            <div class="logo">
+                <img src="/image/logo.png" height="50px" ; alt="">
+            </div>
+            <a href="/home.html">Trang Chủ</a>
+            <a href="/src/Views/Contact.html">Hỗ Trợ</a>
+            <a href="/src/Views/Product.html">Sản Phẩm</a>
+            <a href="/src/Views/Dowload.html">Dowload</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="register">
+            <p>Đăng Kí Tài Khoản Chat</p>
+            <label for="username_create" class="label">Tên Đăng Nhập:</label>
+            <input type="text" id="username_create" placeholder="Nhập tên đăng nhập">
+
+
+            
+            <label for="email_create" class="label">Email:</label>
+            <input type="text" id="email_create" placeholder="Nhập email">
+
+            
+            <label for="password_create" class="label">Mật Khẩu:</label>
+            <input type="password" id="password_create" placeholder="Nhập mật khẩu">
+
+
+            <label for="password_create_again" class="label">Nhập Lại Mật Khẩu:</label>
+            <input type="password" id="password_create_again" placeholder="Nhập lại mật khẩu">
+            
+            <div class="register_new">
+            <input type="submit" id="submit" value="Đăng Kí">
+            <div class="switch">Bạn đã có tài khoản? <a href="/src/login_register/login.html" onclick="switchForm()">Đăng Nhập</a></div>
+            
+            
+            </div>
+        </div>
+
+        </div>
+    </div>
+    <script src="/script_login/register.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat Realtime</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <div class="logo">
+                <img src="/image/logo.png" height="50px" alt="Logo">
+            </div>
+            <nav>
+                <a href="/home.html">Trang Chủ</a>
+                <a href="/src/Views/Contact.html">Hỗ Trợ</a>
+                <a href="/src/Views/Product.html">Sản Phẩm</a>
+                <a href="/src/Views/Download.html">Download</a>
+                <a href="/src/login_register/login.html" id="login-link">Đăng Nhập</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="chat-container">
+        <aside class="sidebar">
+            <h2 style="text-align: center;">Người Dùng</h2>
+            <ul id="users" style="text-align: center;"></ul>
+        </aside>
+
+        <section class="chat-box">
+            <div class="chat-header">
+                <h3 id="chatWith">Chọn tài khoản để trò chuyện</h3>
+            </div>
+            <div class="messages" id="messages"></div>
+            <div class="chat-input">
+                <button id="emojiButton">😀</button> <!-- Nút mở bảng emoji -->
+                <input type="text" id="messageInput" placeholder="Nhập tin nhắn..." autocomplete="off">
+                <button id="send">Gửi</button>
+            </div>
+            <div id="emojiContainer">
+                <emoji-picker id="emojiPicker" style="display: none;"></emoji-picker>
+            </div>
+        </section>
+    </div>
+
+    <!-- Socket.io -->
+    <script src="http://localhost:3001/socket.io/socket.io.js"></script>
+    <!-- Thêm thư viện Emoji -->
+    <script type="module">
+        import 'https://cdn.jsdelivr.net/npm/emoji-picker-element';
+    </script>
+
+    <script src="chat.js"></script>
+</body>
+</html>

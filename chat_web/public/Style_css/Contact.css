@@ -1,0 +1,190 @@
+body {
+    width: 100%;
+    height: 100vh; /* Đảm bảo nền phủ hết màn hình */
+    margin: 0;
+    background: linear-gradient(135deg, #e2798b, #312e2d); /* Gradient màu pastel */
+    background-attachment: fixed; /* Giữ nền cố định khi cuộn */
+}
+
+
+#header {
+    width: 100%;
+}
+#content{
+    position: absolute;
+    background-color: rgb(231, 212, 212);
+    background-image: url("/image/background-contacts.jpg");
+    top: 60%;
+    left: 50%;
+    width: 450px;
+    height: 480px;
+    border-radius: 20px;
+    border: 2px black;
+    box-shadow: 0px 0px 10px;
+    transform: translate(-50%,-50%);
+}
+#content h1{
+    display: flex;
+    position: relative;
+    top: 50px;
+    color: blanchedalmond;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: center;
+    
+}
+#content em{
+    display: flex;
+    position: relative;
+    top:20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: aqua;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 80px;
+    left: 10%;
+}
+
+.content-center{
+    display: flex;
+    flex-direction: row; /* Sắp xếp theo hàng ngang */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    gap: 30px; /* Khoảng cách giữa các icon */
+    margin-top: 80px;
+    margin-right: 30px;
+    
+}
+
+.content-center a,li {
+    display: flex;
+    list-style: none;
+    flex-direction: column; /* Icon trên, chữ dưới */
+    align-items: center; /* Căn giữa nội dung */
+    text-decoration: none; /* Bỏ gạch chân link */
+    font-size: 18px;
+    color: red;
+    gap: 5px; /* Khoảng cách giữa icon và chữ */
+    
+}
+
+.content-center li:hover{
+    position: relative; /* Để `top` hoạt động */
+    transition: transform 0.3s ease, top 0.5s ease;
+    bottom: 20px;
+    transform:scale(1.2s)
+}
+
+.content-center img {
+    width: 40px; /* Tăng kích thước icon */
+    height: auto;
+}
+
+
+.logo {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 15px 10px;
+}
+
+.menu {
+    background-color: rgb(247, 191, 234);
+    display: flex;
+    flex-wrap: wrap; /* Đảm bảo các phần tử tự động xuống hàng khi không đủ không gian */
+    justify-content: space-between; /* Tạo khoảng cách giữa các phần tử */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    padding: 10px 100px; /* Thêm khoảng trống hai bên */
+}
+
+.menu a {
+    display: block;
+    color: brown;
+    text-transform: uppercase;
+    padding: 16px 16px;
+    text-decoration: none;
+    flex: 1; /* Để các liên kết cân đối theo chiều ngang */
+    text-align: center; /* Canh giữa nội dung */
+}
+
+.menu a:hover {
+    color: chartreuse;
+    background-color: rgb(208, 208, 221);
+    border-right: solid;
+    border-right-color: rgb(200, 192, 204);
+    border-radius: 20px;
+}
+
+.menu .logo {
+    flex: 2; /* Logo chiếm nhiều không gian hơn */
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: left; /* Căn logo sang trái */
+}
+
+
+
+
+
+
+
+
+
+
+/* Media Queries cho màn hình nhỏ hơn */
+@media screen and (max-width: 768px) {
+    .menu {
+        flex-direction: column; /* Chuyển các phần tử trong menu thành cột */
+        align-items: center;
+    }
+
+    .menu a {
+        flex: none; /* Hủy bỏ flex để giữ kích thước tự nhiên */
+        width: 100%; /* Đặt các liên kết chiếm toàn bộ chiều ngang */
+        text-align: center;
+    }
+
+    .menu .logo {
+        text-align: center;
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .menu a {
+        padding: 12px 15px; /* Giảm padding để phù hợp màn hình nhỏ */
+    }
+
+    .menu .logo {
+        font-size: 14px; /* Thu nhỏ kích thước chữ cho logo */
+    }
+}
+.footer {
+    display: flex;
+    justify-content: space-around; /* Cân đều khoảng cách giữa các phần */
+    align-items: start; /* Căn phần tử từ trên xuống */
+    background-color: #0e0e0e;
+    padding: 40px 80px; /* Tăng padding để có không gian thoải mái */
+    color: #fff;
+    width: 100%; /* Đảm bảo footer full chiều rộng */
+    box-sizing: border-box; /* Đảm bảo padding không làm vượt quá 100% */
+    margin-bottom: 0; /* Đảm bảo không có margin dư thừa */
+    padding-bottom: 20px; /* Điều chỉnh khoảng cách phù hợp */
+    margin-top: 5%;
+}
+  .footer-section {
+    width: 100%;
+  }
+  
+  .footer-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section p {
+    margin: 5px 0;
+  }
+  
+  .footer-section p:last-child {
+    margin-bottom: 0;
+  }
+  

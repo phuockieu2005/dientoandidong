@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" rel="noopener" target="_blank" href="/Style_css/login.css">
+    <title>Form Login</title>
+    
+</head>
+
+<body>
+    <div id="header">
+        <div class="menu">
+            <div class="logo">
+                <img src="/image/logo.png" height="50px" ; alt="">
+            </div>
+            <a href="/home.html">Trang Chủ</a>
+            <a href="/src/Views/Contact.html">Hỗ Trợ</a>
+            <a href="/src/Views/Product.html">Sản Phẩm</a>
+            <a href="/src/Views/Dowload.html">Dowload</a>
+            <a href="/src/login_register/login.html" id="login-link">Đăng Nhập</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="login">
+            <p>Đăng Nhập Tài Khoản Chat</p>
+            <label for="username_create" class="label">Tên Đăng Nhập:</label>
+            <input type="text" id="username_login" placeholder="Nhập tên đăng nhập">
+
+            <label for="password_create" class="label">Mật Khẩu:</label>
+            <input type="password" id="password_login" placeholder="Nhập mật khẩu">
+
+
+
+            <input type="submit" id="submit" value="Đăng Nhập">
+            <div class="register_new">
+                
+                <div class="switch">Bạn chưa có tài khoản? <a href="/src/login_register/register.html" onclick="switchForm()">Đăng Kí</a></div>
+            </div>
+        </div>
+    </div>
+    <script src="/script_login/login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,262 @@
+body {
+    width: 100%;
+    height: 100vh; /* Đảm bảo nền phủ hết màn hình */
+    margin: 0;
+    background: linear-gradient(135deg, #f5e9eb, #e1cdc2); /* Gradient màu pastel */
+    background-attachment: fixed; /* Giữ nền cố định khi cuộn */
+}
+
+#header {
+    width: 100%;
+
+}
+
+
+
+#footer {
+    width: 100%;
+    
+}
+
+.table {
+    margin-top: 5%;
+    background-color: rgb(21, 18, 14);
+    display: flex;
+    flex-wrap: wrap;
+    /* Đảm bảo các phần tử tự động xuống hàng khi không đủ không gian */
+    justify-content: space-between;
+    /* Tạo khoảng cách giữa các phần tử */
+    align-items: stretch;
+    padding: 10px 100px;
+    /* Thêm khoảng trống hai bên */
+}
+
+h1 {
+    color: rgb(234, 167, 167)
+}
+
+p {
+    color: rgb(203, 38, 38);
+}
+
+.logo {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 15px 10px;
+}
+
+.menu {
+    background-color: rgb(196, 252, 255);
+    display: flex;
+    flex-wrap: wrap;
+    /* Đảm bảo các phần tử tự động xuống hàng khi không đủ không gian */
+    justify-content: space-between;
+    /* Tạo khoảng cách giữa các phần tử */
+    align-items: center;
+    /* Căn giữa theo chiều dọc */
+    padding: 10px 100px;
+    /* Thêm khoảng trống hai bên */
+}
+
+.menu a {
+    display: block;
+    color: brown;
+    text-transform: uppercase;
+    padding: 16px 16px;
+    text-decoration: none;
+    flex: 1;
+    /* Để các liên kết cân đối theo chiều ngang */
+    text-align: center;
+    /* Canh giữa nội dung */
+}
+
+.menu a:hover {
+    color: rgb(233, 244, 222);
+    background-color: rgb(208, 208, 221);
+    border-right: solid;
+    border-right-color: rgb(200, 192, 204);
+    border-radius: 20px;
+}
+
+.menu .logo {
+    flex: 2;
+    /* Logo chiếm nhiều không gian hơn */
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: left;
+    /* Căn logo sang trái */
+}
+
+/* tab content */
+.content {
+    margin-left: 30px;
+    width: 150px;
+    /* Đặt chiều rộng cho khung chứa */
+    border: 2px solid rgb(255, 255, 255);
+    /* Tạo viền bao quanh toàn bộ khung */
+    padding: 10px;
+    /* Thêm khoảng trống giữa nội dung và viền */
+    text-align: center;
+    /* Căn giữa nội dung */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    /* Hiệu ứng đổ bóng */
+    border-radius: 10px;
+    /* Góc bo tròn */
+    display: flex;
+    flex-direction: column;
+    /* Đảm bảo các phần tử xếp theo cột */
+    align-items: center;
+    /* Căn giữa các phần tử */
+}
+
+
+
+
+.content img {
+    width: 100%;
+    /* Hình ảnh chiếm toàn bộ chiều rộng khung */
+    height: 120px;
+    /* Giữ tỷ lệ của hình ảnh */
+    border: 2px solid rgb(255, 255, 255);
+    /* Tạo viền cho ảnh */
+    border-radius: 5px;
+    /* Bo tròn góc ảnh */
+}
+
+.content p {
+    margin-top: 10px;
+    /* Khoảng cách giữa ảnh và đoạn văn */
+    font-size: 16px;
+    /* Kích thước chữ hợp lý */
+    color: #333;
+    /* Màu chữ */
+    font-weight: bold;
+    /* Làm nổi bật đoạn văn */
+}
+
+.content p1 {
+    font-size: 16px;
+    /* Kích thước chữ hợp lý */
+    color: #fc2626;
+    /* Màu chữ đỏ */
+    margin-top: 5px;
+}
+
+.content button {
+    height: 40px;
+    width: 120px;
+    background: none;
+    border: 2px solid red;
+    color: red;
+    text-align: center;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    /* Tạo góc bo tròn cho nút */
+    cursor: pointer;
+    /* Thêm hiệu ứng con trỏ khi hover */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Hiệu ứng chuyển đổi */
+}
+
+.content button:hover {
+    background-color: orange;
+    color: white;
+    /* Thay đổi màu chữ khi hover */
+}
+
+.container {
+
+    display: flex;
+    /* Sử dụng Flexbox để xếp các phần tử theo hàng ngang */
+    flex-wrap: wrap;
+    /* Cho phép các phần tử tự động xuống hàng khi không đủ chỗ */
+    gap: 20px;
+    /* Khoảng cách giữa các phần tử */
+    justify-content: left;
+    /* Căn giữa các phần tử trong hàng */
+}
+
+
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+   
+}
+
+/* Phần bên trái */
+.content-table {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    text-align: left;
+    max-width: 50%;
+    padding-left: 20px;
+    
+}
+
+/* Tiêu đề gradient */
+.chat-content {
+    font-size: 40px;
+    font-weight: bold;
+    background: linear-gradient(to right, #3b82f6, #a855f7, #ec4899);
+    -webkit-background-clip: text; /* Tiền tố cho Chrome, Safari */
+    background-clip: text; /* Thuộc tính chuẩn */
+    -webkit-text-fill-color: transparent; /* Để văn bản không có màu nền */
+   
+}
+
+/* Mô tả */
+.description {
+    font-size: 16px;
+    color: #3b82f6;
+    background-color: #e7f3ff;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+/* Nút đăng nhập */
+.login-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9c89e9;
+    font-size: 18px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 80%;
+    max-width: 250px;
+}
+
+.login-btn:hover {
+    background-color: #1c6ce3;
+    color: #e7f3ff;
+}
+
+/* Link đổi tài khoản */
+.switch-account {
+    display: block;
+    margin-top: 10px;
+    color: #0066ff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Logo cửa hàng ứng dụng */
+.app-links img {
+    align-items: center;
+    width: 120px;
+    height: 50px;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
